@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: #b8469b;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  @apply font-bold text-2xl;
+}
+dt {
+  @apply font-bold;
+}
+hr {
+  @apply my-4 w-1/2 border-dotted border-2 border-black;
+}
+#alacarte article {
+  @apply border-2 border-black p-4;
+}
+
+.carousel {
+  @apply border-2 border-black border-dashed p-8;
+}
+
+.hero-content {
+  @apply shadow-xl rounded-xl;
+}
